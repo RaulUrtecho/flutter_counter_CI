@@ -13,7 +13,7 @@ void main() {
         'emits [1] when state is 0',
         build: () => CounterCubit(),
         act: (cubit) => cubit.increment(),
-        expect: const <int>[2],
+        expect: const <int>[1],
       );
 
       blocTest<CounterCubit, int>(
